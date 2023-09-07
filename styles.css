@@ -1,0 +1,133 @@
+:root{
+    height: 100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(Norse-Bold.otf);
+}
+
+*{
+    box-sizing: border-box; 
+}
+
+body{
+    height: 100%;
+    display: flex;
+}
+
+#left{
+    width: 30vw;
+    color: white;
+    background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    padding-top: 20vh;
+    padding-bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#left a{
+    color: white;
+}
+
+label{
+    display: block;
+}
+
+#odin{
+    font-family: norse-bold, sans-serif;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,40%);
+    width: 100%;
+}
+
+#logo{
+    height: 100px;
+}
+
+#right{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#top{
+    background-color: #ededed;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px 40px;
+}
+
+#middle{
+    background-color: #ffffff;
+    height: 30%;
+    padding: 10px 100px 10px 40px;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form div{
+    width: 50%;
+    padding: 0px 50px 0px 0px;
+    margin: 5px 0px;
+}
+
+input{
+    width: 100%
+}
+
+#bottom{
+    background-color: #ededed;
+    padding: 10px 40px;
+    height: 30%;
+}
+
+#bottom a{
+    color: #596d48;
+    font-weight: bold;
+}
+
+button{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #596d48;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+@media (max-width: 860px){
+    body{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    #right, #left{
+        /* display: block; */
+        width: 100vw;
+    }
+
+    #right{
+        /* height: 100vh; */
+    }
+
+    #left{
+        background-size: 100% auto;
+    }
+
+}
